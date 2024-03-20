@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --corprincipal: #262223;
+    --corsecundaria: #F2F2F2;
+    --cortitulo: #0D0D0D;
+}
+
+body{
+    background-color: var(--corsecundaria);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.cabecalho h1{
+    color: var(--cortitulo);
+}
+
+.cabecalho img{
+    max-width: 70px;
+    max-height: 70p;
+    width: auto;
+    height: auto;
+
+}
+
+.container-input{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.container-input .input{
+    width: 400px;
+    height: 330px;
+}
+
+#input-texto{
+    width: 345px;
+    height: 330px;
+    font-size: 20px;
+    color: var(--cortitulo);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: lowercase;
+}
+
+#output{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--corprincipal);
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    margin-right: 3%;
+
+}
+
+#output h2{
+    text-align: center;
+    font-size: 25px;
+    color: var(--cortitulo);
+}
+
+#output span{
+    font-size: 16px;
+    text-align: center;
+}
+
+#output img{
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+}
+
+.container-botao button{
+    border: 2px solid #091740;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--corprincipal);
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.botao-copiar{
+    border: 2px solid #091740;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--corprincipal);
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.container-botao button:hover{
+    border: 1px solid var(--cortitulo);
+    transition: 0.5s all;
+}
